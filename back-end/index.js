@@ -12,7 +12,7 @@ const connectionToDb = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "kab212_07_react_zoo"
+    database: "kab212_07_zoo"
 })
 
 //POST
@@ -40,7 +40,7 @@ app.get("/zoo", (req,res)=>{
 app.delete("/zoo/:id", (req, res)=>{
     const sqlQuery=`DELETE FROM zoo_museum WHERE id=?`;
 
-    connectionToDb.query(sqlQuery, [res.params.id], function(err, result){
+    connectionToDb.query(sqlQuery, [req.params.id], function(err, result){
         if(err) throw err;
         res.json({message: 'deleted'})
     })
