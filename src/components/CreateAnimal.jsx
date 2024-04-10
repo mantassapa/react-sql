@@ -14,7 +14,7 @@ const CreateAnimal = ({setCreate}) => {
         setName("")
         setType("")
         setWeight("")
-        setLives("")
+        setLives(0)
 
     }
 
@@ -33,7 +33,7 @@ const CreateAnimal = ({setCreate}) => {
             <input type="number" value={weight} onChange={(e)=>setWeight(e.target.value)}/>
 
             <label>Does animal lives in LT zoo?</label>
-            <input type="checkbox" checked={lives} onChange={()=>setLives((doLive)=>(doLive?0:1))}/>
+            <input type="checkbox" checked={lives} onChange={()=>setLives((prev)=>(prev?0:1))}/>
 
             <button>Create</button>
         </form>
