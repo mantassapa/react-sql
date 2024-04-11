@@ -10,8 +10,8 @@ const Animal = ({animal, handleDelete, setShow}) => {
         <span>{weight}kg</span>
         <span>{lives}</span>
         <div>
-            <button onClick={()=>setShow(id)}>Edit</button>
-            <button onClick={()=>handleDelete(id)}>Delete</button>
+            <button onClick={()=>setShow(id)} id="show_form_edit">Edit</button>
+            <button onClick={()=>handleDelete(id)}id="show_form_delete">Delete</button>
         </div>
     </li>
   )

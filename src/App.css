@@ -22,4 +22,29 @@ span{
     display: flex;
     border: 1px solid;
 }
-
+.update_form{
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.342);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid;
+    text-align: center;
+}
+#update_form_exit{
+    background-color: red;
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;
+    right: 2px;
+}
+#show_form_edit {
+    background-color: rgba(255, 115, 0, 0.986);
+    border-color: aqua;
+}
+#show_form_delete{
+    background-color: red;
+    border-color: grey;
+}
+body{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZDAzN2FhMTgtMzg5YS00ZDFkLWFiMTUtZTVmMzk4ZjEyMmJmXkEyXkFqcGdeQXVyNjkzMjkzMTY@._V1_.jpg);
+}
